@@ -13,6 +13,8 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/global.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -28,79 +30,4 @@ body {
   color: #fff;
   background-color: #121212;
 }
-.header {
-  background: #000;
-  padding: 1rem;
-}
-.red {
-  color: red;
-}
-
-.titulo h1{
-  font-size: 20px;
-}
-
-.titulo ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin-left: 1550px;
-}
-
-.titulo a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.home {
-  text-align:left;
-  padding: 2rem;
-}
-
-.home h1{
-  font-size: 50px;
-}
-
-.pricing {
-  padding: 2rem;
-  text-align: center;
-}
-
-.pricing h1{
-  font-size: 30px;
-}
-
-.pricing h2{
-  font-size: 25px;
-}
-
-.plans {
-  display: flex;
-  justify-content: space-around;
-}
-
-.benefits {
-  background: transparent;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 2px solid red;
-  text-align: center;
-}
-
-.benefits h3{
-  color: red;
-}
-
-.plan {
-  background: #222;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: #000;
-}
-
 </style>

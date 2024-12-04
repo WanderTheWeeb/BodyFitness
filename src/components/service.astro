@@ -1,0 +1,57 @@
+---
+// Services.astro
+
+import ServiceCard from "./servicecard.astro";
+
+const services = [
+  {
+    title: "ACCESO LIBRE AL GIMNASIO",
+    description: "Entrena sin restricciones durante nuestros horarios operativos. Beneficio incluido en todas las membresías.",
+    icon: "/icons/gym.svg",
+  },
+  {
+    title: "APOYO CONSTANTE DEL ENTRENADOR",
+    description: "Entrenadores disponibles en horarios específicos:\n- Matutino: 07:30 - 11:00 hrs\n- Vespertino: 14:00 - 22:00 hrs",
+    icon: "/icons/trainer.svg",
+  },
+  {
+    title: "RUTINA PERSONALIZADA",
+    description: "Planes de entrenamiento adaptados a tus metas y capacidades.",
+    icon: "/icons/routine.svg",
+  },
+  {
+    title: "PLAN NUTRICIONAL COMPLETO",
+    description: "Mantén una alimentación saludable y deliciosa con un plan hecho a tu medida.",
+    icon: "/icons/nutrition.svg",
+  },
+  {
+    title: "MONITOREO DE PROGRESO CONSTANTE",
+    description: "Seguimos de cerca tus avances para ayudarte a lograr tus objetivos.",
+    icon: "/icons/progress.svg",
+  },
+  {
+    title: "ACCESO A LA APP DE ENTRENAMIENTO",
+    description: "Lleva tus rutinas y progreso en tu teléfono para más comodidad.",
+    icon: "/icons/app.svg",
+  },
+  {
+    title: "ORIENTACIÓN EN SUPLEMENTACIÓN",
+    description: "Te asesoramos sobre el uso adecuado de suplementos para maximizar tus resultados.",
+    icon: "/icons/supplements.svg",
+  },
+  {
+    title: "WI-FI GRATIS EN LAS INSTALACIONES",
+    description: "Conéctate sin costo mientras entrenas.",
+    icon: "/icons/wifi.svg",
+  },
+];
+
+---
+<section class="py-16 bg-black">
+  <h2 class="text-center text-4xl font-bold text-red-600 mb-8">BENEFICIOS Y SERVICIOS</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-4">
+    {services.map((service) => (
+      <ServiceCard {...service} />
+    ))}
+  </div>
+</section>

@@ -1,9 +1,16 @@
 ---
+export interface Props {
+    title: string;
+    price: string;
+    description: string;
+}
+const { title, price, description } = Astro.props;
 ---
-<div>
-    <h4>INSCRIPCIÓN DE GRUPO</h4>
-    <p>$150<span>/mes</span></p>
-    <div class="bg-white">
-        Some shit here
-    </div>
+
+<div class="bg-black text-white rounded-xl p-6 shadow-lg">
+    <h4 class="text-xl lg:text-2xl font-bold text-red-600 mb-2">
+        {title}
+    </h4>
+    <p class="text-4xl lg:text-5xl font-bold mb-4">{price}</p>
+    <p class="text-sm lg:text-base text-gray-400">{description}</p>
 </div>

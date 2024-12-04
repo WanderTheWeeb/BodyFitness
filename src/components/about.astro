@@ -1,60 +1,77 @@
----
----
-<section class="bg-black text-white font-sans">
-  <div class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-    <!-- Texto -->
-    <div>
-      <!-- Título -->
-      <h1 class="text-4xl font-bold mb-8">
-        ACÉRCATE A <span class="text-red-500">BODY FITNESS</span>
-      </h1>
-
-      <!-- Ubicación -->
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4">Ubicación</h2>
-        <p class="mb-2">📍 Localidad: Coatzacoalcos, Veracruz</p>
-        <p class="mb-2">
-          📍 Dirección Principal: Avestruces #172, Col. Sta. Isabel 3era Etapa
-        </p>
-        <p class="text-gray-400">(A 100 metros del Oxxo entrando por Elektra)</p>
-        <p class="mt-2">
-          📍 Domicilio Administrativo: Alondras #9, Col. Sta. Isabel 3era Etapa
-        </p>
-      </div>
-
-      <!-- Horarios de Atención -->
-      <div class="mb-8">
-        <h2 class="text-2xl font-semibold mb-4">Horarios de Atención</h2>
-        <p>🕒 Lunes a Viernes: 06:00 – 22:00 hrs</p>
-        <p>🕒 Sábados: 07:00 – 14:00 hrs</p>
-        <p class="text-gray-400">(Domingos cerrado)</p>
-      </div>
-
-      <!-- Contacto -->
+<section
+  class="bg-black text-white font-sans relative"
+  style="background-image: url('/assets/aboutbg.png');"
+>
+  <!-- Capa oscura general para el fondo -->
+  <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+  
+  <div class="relative z-10">
+    <div
+      class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"
+    >
+      <!-- Texto -->
       <div>
-        <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
-        <p>📱 WhatsApp: 9213027821</p>
-        <p>📞 Teléfono Fijo: 9211648294</p>
-        <p>
-          📧 Correo Electrónico:
-          <a
-            href="mailto:bodyfitness.coatza2024@gmail.com"
-            class="text-red-500"
-            >bodyfitness.coatza2024@gmail.com</a
-          >
-        </p>
-      </div>
-    </div>
+        <!-- Título -->
+        <h1 class="text-4xl font-bold mb-8">
+          ACÉRCATE A <span class="text-red-500">BODY FITNESS</span>
+        </h1>
 
-    <!-- Imagen -->
-    <div class="relative">
-      <img
-        src="/assets/aboutImage.png"
-        alt="Gym Image"
-        class="w-full h-auto object-cover rounded-lg"
-      />
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <p class="text-white text-lg font-bold">¡Vive la experiencia Body Fitness!</p>
+        <!-- Ubicación -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">Ubicación</h2>
+          <p class="mb-2">📍 Localidad: Coatzacoalcos, Veracruz</p>
+          <p class="mb-2">
+            📍 Dirección Principal: Avestruces #172, Col. Sta. Isabel 3era Etapa
+          </p>
+          <p class="text-gray-400">
+            (A 100 metros del Oxxo entrando por Elektra)
+          </p>
+          <p class="mt-2">
+            📍 Domicilio Administrativo: Alondras #9, Col. Sta. Isabel 3era
+            Etapa
+          </p>
+        </div>
+
+        <!-- Horarios de Atención -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4">Horarios de Atención</h2>
+          <p>🕒 Lunes a Viernes: 06:00 – 22:00 hrs</p>
+          <p>🕒 Sábados: 07:00 – 14:00 hrs</p>
+          <p class="text-gray-400">(Domingos cerrado)</p>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
+          <p>📱 WhatsApp: 9213027821</p>
+          <p>📞 Teléfono Fijo: 9211648294</p>
+          <p>
+            📧 Correo Electrónico:
+            <a
+              href="mailto:bodyfitness.coatza2024@gmail.com"
+              class="text-red-500">bodyfitness.coatza2024@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="relative">
+        <!-- Imagen -->
+        <img
+          src="/assets/aboutImage.png"
+          alt="Gym Image"
+          class="w-full h-auto object-cover rounded-lg"
+        />
+        
+        <!-- Capa oscura para la imagen -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+        >
+          <p class="text-white text-lg font-bold">
+            ¡Vive la experiencia Body Fitness!
+          </p>
+        </div>
       </div>
     </div>
   </div>

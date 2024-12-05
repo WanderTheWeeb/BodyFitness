@@ -12,5 +12,8 @@ const { title, price, description } = Astro.props;
         {title}
     </h4>
     <p class="text-4xl lg:text-5xl font-bold mb-4">{price}</p>
-    <p class="text-sm lg:text-base text-gray-400">{description}</p>
+    <div class="bg-white p-6 rounded-b-xl mt-4 h-[50%]">
+        <p class="text-sm lg:text-base text-black">{description}</p>
+    </div>
 </div>
+

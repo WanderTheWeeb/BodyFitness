@@ -8,7 +8,7 @@ export interface Props {
 const { title, description, icon } = Astro.props;
 ---
 
-<div class="group border border-red-600 rounded-lg p-6 text-center text-white hover:bg-red-700 transition-all duration-300 font-sans">
+<div class="group border border-red-600 rounded-lg p-6 text-center text-white hover:bg-red-700 transition-all duration-300 font-sans charge">
   <img src={icon} alt={title} class="mx-auto w-16 h-16 mb-4" />
   <h3 class="text-xl font-bold text-red-600 group-hover:text-white transition-all duration-300">
     {title}
@@ -17,3 +17,24 @@ const { title, description, icon } = Astro.props;
     {description}
   </p>
 </div>
+
+<style>
+  @keyframes charge {
+    from {
+      scale: 0.5;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to{
+      scale: 1;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .charge {
+    animation: charge linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 20%;
+  }
+</style>

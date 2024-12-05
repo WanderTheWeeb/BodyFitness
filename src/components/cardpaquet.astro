@@ -7,7 +7,7 @@ export interface Props {
 const { title, price, description } = Astro.props;
 ---
 
-<div class="bg-gradient-radial from-[#1F1F1F] to-[#0D0D0D] text-white rounded-xl p-6 shadow-lg font-sans">
+<div class="bg-gradient-radial from-[#1F1F1F] to-[#0D0D0D] text-white rounded-xl p-6 shadow-lg font-sans charge">
     <h4 class="text-xl lg:text-2xl font-bold text-red-600 mb-2">
         {title}
     </h4>
@@ -17,3 +17,29 @@ const { title, price, description } = Astro.props;
     </div>
 </div>
 
+<style>
+   @keyframes charge {
+  0% {
+    scale: 0.8;
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  60% {
+    scale: 1.05;
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.charge {
+  animation: charge linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
+
+  </style>

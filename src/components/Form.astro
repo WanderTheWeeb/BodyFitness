@@ -1,27 +1,51 @@
----
----
-
-<div class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-<section style="width: 1900px; height: 500px;">
-
-    <h1 class="text-4xl font-bold mb-8">REGISTRO DE <span class="text-red-500">CONTACTO</h1>
-<form method="POST">
-  <label>
-    <h2 class="text-2xl font-semibold mb-4">Nombre :</h2>
-    <input type="text" name="username" required class="text-black" />
-  </label><br>
-  <label>
-    <h2 class="text-2xl font-semibold mb-4">Correo <span class="text-red-500">electrónico :</h2>
-    <input type="email" name="email" required class="text-black"/>
-  </label><br>
-  <label>
-    <h2 class="text-2xl font-semibold mb-4">Número <span class="text-red-500">telefonico :</h2>
-    <input type="text" name="text" required class="text-black"/>
-  </label><br><br>
-  <button style="color: rgb(255, 255, 255); border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 12px; cursor: pointer; box-shadow: 0 4px 8px rgba(146, 146, 146, 0.2); transition: 0.3s;">
-    Enviar
-  </button>
-  
-</form>
-</section>
+<div class="flex justify-center items-center min-h-screen bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D]">
+  <div class="w-full max-w-lg p-8 bg-[#121212] bg-opacity-95 rounded-lg shadow-lg charge">
+    <h1 class="text-4xl font-bold text-center mb-6 text-white">
+      REGISTRO DE <span class="text-red-600">CONTACTO</span>
+    </h1>
+    <form method="POST" class="space-y-6">
+      <div>
+        <label class="block text-xl font-medium text-gray-300 mb-2">Nombre:</label>
+        <input type="text" name="username" required class="w-full px-4 py-2 bg-[#1F1F1F] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+      </div>
+      <div>
+        <label class="block text-xl font-medium text-gray-300 mb-2">Correo <span class="text-red-600">electrónico:</span></label>
+        <input type="email" name="email" required class="w-full px-4 py-2 bg-[#1F1F1F] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+      </div>
+      <div>
+        <label class="block text-xl font-medium text-gray-300 mb-2">Número <span class="text-red-600">telefónico:</span></label>
+        <input type="text" name="phone" required class="w-full px-4 py-2 bg-[#1F1F1F] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600" />
+      </div>
+      <div>
+        <label class="block text-xl font-medium text-gray-300 mb-2">Contenido del <span class="text-red-600">mensaje:</span></label>
+        <textarea name="message" rows="4" required class="w-full px-4 py-2 bg-[#1F1F1F] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 resize-none"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="px-6 py-3 bg-red-600 text-white font-semibold text-lg rounded-lg shadow-md hover:bg-red-700 hover:shadow-xl transform hover:scale-105 transition duration-300">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
+
+<style>
+  @keyframes charge {
+    from {
+      scale: 0.5;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .charge {
+    animation: charge linear both; 
+    animation-timeline: view(); 
+    animation-range: entry 5% cover 15%; 
+  }
+</style>

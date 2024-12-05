@@ -4,11 +4,13 @@ que benificos y servicios incluyen  cada una de estas, así como información de
 
 ## Miembros del equipo
 Jacinto Aguirre Habib
+
 Morales García Gabriel Antonio
+
 Santes Primo José Francisco
 
 ### Enlaces a los perfiles
-[![Habib](https://github.com/Habib398)]
+[![Habib J.](https://github.com/Habib398)]
 [![José F.](https://github.com/WanderTheWeeb)]
 [![Gabriel G.](https://github.com/Gabriel117Garcia)]
 

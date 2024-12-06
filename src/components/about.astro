@@ -2,23 +2,25 @@
   class="bg-black text-white font-sans relative bg-cover bg-center"
   style="background-image: url('/assets/aboutbg.png');"
 >
-  <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-90 overflow-hidden"></div>
 
   <div class="relative z-10">
     <div
-      class="max-w-6xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center lg:text-left text-center"
+      class="max-w-6xl mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center text-center lg:text-left"
     >
       <!-- Texto -->
       <div class="reveal-from-left">
-        <h1 class="text-3xl sm:text-4xl font-bold mb-8">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-8">
           ACÉRCATE A <span class="text-red-500">BODY FITNESS</span>
         </h1>
 
         <!-- Ubicación -->
-        <div class="mb-8">
-          <h2 class="text-xl sm:text-2xl font-semibold mb-4">Ubicación</h2>
-          <p class="mb-2">📍 Localidad: Coatzacoalcos, Veracruz</p>
-          <p class="mb-2">
+        <div class="mb-6 sm:mb-8">
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-4">
+            Ubicación
+          </h2>
+          <p class="mb-1 sm:mb-2">📍 Localidad: Coatzacoalcos, Veracruz</p>
+          <p class="mb-1 sm:mb-2">
             📍 Dirección Principal: Avestruces #172, Col. Sta. Isabel 3era Etapa
           </p>
           <p class="text-gray-400">
@@ -31,8 +33,10 @@
         </div>
 
         <!-- Horarios de Atención -->
-        <div class="mb-8">
-          <h2 class="text-xl sm:text-2xl font-semibold mb-4">Horarios de Atención</h2>
+        <div class="mb-6 sm:mb-8">
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-4">
+            Horarios de Atención
+          </h2>
           <p>🕒 Lunes a Viernes: 06:00 – 22:00 hrs</p>
           <p>🕒 Sábados: 07:00 – 14:00 hrs</p>
           <p class="text-gray-400">(Domingos cerrado)</p>
@@ -40,7 +44,9 @@
 
         <!-- Contacto -->
         <div>
-          <h2 class="text-xl sm:text-2xl font-semibold mb-4">Contáctanos</h2>
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-4">
+            Contáctanos
+          </h2>
           <p>📱 WhatsApp: 9213027821</p>
           <p>📞 Teléfono Fijo: 9211648294</p>
           <p>
@@ -59,13 +65,13 @@
         <img
           src="/assets/aboutImage.png"
           alt="Gym Image"
-          class="w-full lg:w-[80%] mx-auto object-cover rounded-lg"
+          class="w-full max-w-full lg:w-[80%] mx-auto object-cover rounded-lg"
         />
 
         <div
           class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
         >
-          <p class="text-white text-lg font-bold">
+          <p class="text-white text-sm sm:text-lg font-bold">
             ¡Vive la experiencia Body Fitness!
           </p>
         </div>
@@ -75,7 +81,7 @@
 </section>
 
 <style>
-  @keyframes reveal-from-left {
+   @keyframes reveal-from-left {
     0% {
       opacity: 0;
       transform: translateX(-100px);
@@ -89,7 +95,7 @@
   @keyframes reveal-from-right {
     0% {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(20px);
     }
     100% {
       opacity: 1;

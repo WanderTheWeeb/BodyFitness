@@ -4,22 +4,58 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta
+			name="description"
+			content="Página principal de un gimnasio, junto a los servicios que ofrece de acuerdo a el tipo de membresía."
+		/>
+		<meta name="keywords" content="Gimnasio, Coatzacoalcos, Membresía" />
+		<meta name="author" content="BodyFitness" />
+		<meta name="robots" content="index, follow" />
+		<meta name="generator" content={Astro.generator} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
 			rel="stylesheet"
 		/>
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<meta
+			property="og:title"
+			content="BodyFitness | Gimnasio en Coatzacoalcos"
+		/>
+		<meta
+			property="og:description"
+			content="Descubre los mejores servicios de gimnasio en Coatzacoalcos. Ofrecemos membresías personalizadas para todos los niveles."
+		/>
+		<meta
+			property="og:url"
+			content="https://bodyfitness-coatza.netlify.app/"
+		/>
+		<meta
+			property="og:image"
+			content="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/273703472_346591694138842_4729826395493345501_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHAHWit49rs8uxWAW5A65ga3Cuayx1PNZ_cK5rLHU81n1Fn4kHtEyRKq1LaEuIhOM8iwvNw-6rvn5qCC7URjtgv&_nc_ohc=M7QyANe-1eIQ7kNvgGgxMmN&_nc_zt=23&_nc_ht=scontent-qro1-1.xx&_nc_gid=AyH3Acz6BScT0-ZS5Zbmd-g&oh=00_AYABHGDs9imWXwNDF_Yx5KlXLShtDnhabKJBir3LcYjdqQ&oe=67591B63"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="BodyFitness" />
+		<meta property="og:locale" content="es_MX" />
+		<meta property="fb:page_id" content="100063640415678" />
+		<meta name="theme-color" content="#121212" />
+		<link rel="canonical" href="https://bodyfitness-coatza.netlify.app/" />
+		<link
+			rel="alternate"
+			href="https://www.facebook.com/profile.php?id=100063640415678&mibextid=ZbWKwL"
+		/>
+		<link
+			rel="alternate"
+			href="https://www.instagram.com/bodyfitness.coatza?igsh=MXhueXpxb2Qxcnp4cw=="
+		/>
 	</head>
 	<body>
 		<slot />

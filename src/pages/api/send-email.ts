@@ -19,11 +19,11 @@ export async function POST({ request }: { request: Request }) {
   
   try {
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com", // Cambia según el servicio (Gmail, Outlook, etc.)
+      host: "smtp.gmail.com", // Cambia según el servicio
       port: 587,
-      secure: false, // true para puerto 465, false para otros
+      secure: false,
       auth: {
-        user: "abidjazinto@gmail.com", // Cambia por tu correo
+        user: "abidjazinto@gmail.com", // Cambia por  correo
         pass: "woybhlyiomxctxbi", // Usa una contraseña de aplicación
       },
     });
@@ -31,7 +31,7 @@ export async function POST({ request }: { request: Request }) {
     // Configura el contenido del correo
     await transporter.sendMail({
       from: '"Formulario de Contacto" <tu_correo@gmail.com>', // Correo remitente
-      to: "habib232hj@gmail.com", // Correo del encargado
+      to: "bodyfitness.coatza2024@gmail.com", // Correo del encargado
       subject: "Nuevo contacto desde el formulario", // Asunto
       html: `
         <h1>Nuevo contacto registrado</h1>
